@@ -1,0 +1,151 @@
+/*desktop screen*/
+@media screen and (min-width:960px){
+    .container{
+        display: grid;
+        background-image: url('images/제목\ 없음.png');
+        background-size: cover;
+        text-decoration-thickness: 10px;
+        grid-template-columns:auto auto auto;
+        grid-template-rows: auto;
+        
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "introduce study team";
+    }
+    #header{
+        text-align: center;
+        grid-area: header;
+        font-weight: bold;
+        text-shadow: white;
+    }
+    #nav{
+        text-align: center;
+        grid-area: nav;
+        font-weight: bold;
+        text-shadow: white;
+
+    }
+    .anchor{
+        display: inline-block;
+    }
+    
+    #intro{
+        grid-area: introduce;
+        font-weight: bold;
+        
+        
+    }
+    
+    #study{
+        grid-area: study;
+        font-weight: bold;
+       
+    }
+    
+    #team{
+        grid-area: team;
+        font-weight: bold;
+    }
+    section{
+        display: grid;
+    }
+}
+
+/*tablet screen*/
+@media screen and (min-width:641px) and (max-width:959px){
+    .container{
+        display: grid;
+        background-image: url('images/ele.png');
+        background-size: cover;
+        grid-template-columns:auto;
+        grid-template-rows: auto;
+        
+        grid-template-areas: 
+        "header header "
+        "nav nav "
+        "intro intro "
+        "study project";
+    }
+    #header{
+        text-align: center;
+        
+        grid-area: header;
+    }
+    #nav{
+        text-align: center;
+        
+        grid-area: nav;
+
+    }
+    .anchor{
+        display: inline-block;
+    }
+    
+    #intro{
+        grid-area: intro;
+        text-align: center;
+        font-weight: bold;
+
+    }
+    
+    #study{
+        grid-area:study;
+        text-align: center;
+
+    }
+    
+    #project{
+        grid-area: project;
+
+    }
+    
+}
+
+/*phone screen*/
+@media screen and (max-width:640px){
+    .container{
+        display: grid;
+        background-image: url('images/i13607831847.png');
+        background-size: contain;
+        grid-template-columns:auto;
+        grid-template-rows: auto;
+        
+        grid-template-areas: 
+        "header"
+        "nav"
+        "intro"
+        "study"
+        "project";
+    }
+    #header{
+        text-align: center;
+        
+        grid-area: header;
+    }
+    #nav{
+        text-align: center;
+        
+        grid-area: nav;
+
+    }
+    .anchor{
+        display: inline-block;
+    }
+    
+    #intro{
+        grid-area: intro;
+    }
+    
+    #study{
+        grid-area:study;
+    }
+    
+    #project{
+        grid-area: project;
+    
+    }
+    section{
+        display: grid;
+    }
+}
